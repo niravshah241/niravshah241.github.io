@@ -68,8 +68,12 @@
         }
 
         .blog-list { 
-            text-align: center; 
-            list-style-position: inside; 
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
         }
         
     </style>
@@ -108,12 +112,12 @@
 
     <div class="card">
         <h2>Blogs</h2>
-        <ul class="blog-list">
+        <p>
             <li><a href="https://www.romsoc.eu/artificial-neural-network-for-partial-differential-equations-from-learning-mapping-function-to-learning-operator/">Artificial Neural Network for Partial Differential Equations</a></li>
             <li><a href="https://medium.com/sissa-mathlab/model-order-reduction-for-thermomechanical-phenomena-arising-in-blast-furnace-hearth-b819b813e223">Model order reduction for thermomechanical phenomena arising in blast furnace hearth</a></li>
             <li><a href="https://www.romsoc.eu/artificial-neural-network-and-data-driven-techniques-scientific-computing-in-the-era-of-emerging-technologies/">Artificial Neural Network and Data-driven techniques</a></li>
             <li><a href="https://www.romsoc.eu/thermo-mechanical-modeling-of-blast-furnace-hearth-for-ironmaking/">Thermo-mechanical modeling of blast furnace hearth for ironmaking</a></li>
-        </ul>
+        </p>
     </div>
    
     <div class="card">
@@ -134,14 +138,14 @@
         <input type="text"
                name="name"
                placeholder="Your Name"
-               required>
+               optional>
 
         <br><br>
 
         <input type="email"
                name="email"
                placeholder="Your Email"
-               required>
+               optional>
 
         <br><br>
 
