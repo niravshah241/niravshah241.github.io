@@ -16,18 +16,11 @@
     --sidebar:#111827;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial;
     background:var(--bg);
     color:var(--text);
     display:flex;
@@ -45,238 +38,124 @@ body{
     overflow-y:auto;
 }
 
-.profile{
-    text-align:center;
+.profile{text-align:center;margin-bottom:2rem;}
+.profile img{
+    width:140px;height:140px;border-radius:50%;
+    object-fit:cover;border:4px solid white;
+}
+
+.nav-links{list-style:none;}
+.nav-links a{
+    display:block;
+    padding:0.7rem 1rem;
+    color:#cbd5e1;
+    text-decoration:none;
+    border-radius:8px;
+}
+.nav-links a:hover{background:#1f2937;}
+.nav-links a.active{background:var(--primary);color:white;}
+
+/* CONTENT */
+.content{flex:1;padding:2rem;max-width:1200px;margin:auto;}
+
+.card{
+    background:white;
+    padding:2rem;
+    border-radius:16px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
     margin-bottom:2rem;
 }
 
-.profile img{
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid white;
-    margin-bottom:1rem;
-}
+h2{color:var(--primary);margin-bottom:1rem;}
 
-.profile h2{
-    margin-bottom:0.3rem;
-}
-
-.profile p{
-    color:#cbd5e1;
-    font-size:0.9rem;
-}
-
-.nav-links{
-    list-style:none;
-}
-
-.nav-links li{
-    margin-bottom:0.5rem;
-}
-
-.nav-links a{
-    display:block;
-    color:#cbd5e1;
-    text-decoration:none;
-    padding:0.75rem 1rem;
-    border-radius:8px;
-    transition:0.3s;
-}
-
-.nav-links a:hover{
-    background:#1f2937;
-    color:white;
-}
-
-.nav-links a.active{
-    background:var(--primary);
-    color:white;
-}
-
-/* CONTENT */
-.content{
-    flex:1;
-    max-width:1200px;
-    margin:auto;
-    padding:2rem;
-}
-
+/* HERO */
 .hero{
     background:linear-gradient(135deg,var(--primary),var(--primary-dark));
     color:white;
-    border-radius:18px;
     padding:3rem;
+    border-radius:18px;
     margin-bottom:2rem;
 }
 
-.hero h1{
-    font-size:3rem;
-    margin-bottom:0.5rem;
-}
-
-.hero p{
-    font-size:1.1rem;
-    line-height:1.6;
-}
+.hero h1{font-size:3rem;}
 
 .social-links{
-    margin-top:1.5rem;
+    margin-top:1rem;
     display:flex;
-    flex-wrap:wrap;
     gap:10px;
+    flex-wrap:wrap;
 }
 
 .social-links a{
     background:white;
     color:var(--primary);
-    text-decoration:none;
-    padding:10px 16px;
-    border-radius:999px;
-    font-weight:bold;
-}
-
-/* SECTIONS */
-section{
-    margin-bottom:2rem;
-}
-
-.card{
-    background:var(--card);
-    padding:2rem;
-    border-radius:16px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
-
-.card h2{
-    margin-bottom:1.5rem;
-    color:var(--primary);
-}
-
-/* TAGS */
-.tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.tag{
-    background:#dbeafe;
-    color:var(--primary-dark);
     padding:10px 14px;
     border-radius:999px;
-    font-weight:600;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 /* TIMELINE */
-.timeline{
-    border-left:3px solid var(--primary);
-    padding-left:2rem;
-}
-
-.timeline-item{
-    position:relative;
-    margin-bottom:2rem;
-}
-
+.timeline{border-left:3px solid var(--primary);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
 .timeline-item::before{
     content:"";
     position:absolute;
-    left:-2.55rem;
+    left:-2.6rem;
     top:0.3rem;
-    width:14px;
-    height:14px;
+    width:14px;height:14px;
     border-radius:50%;
     background:var(--primary);
 }
+.timeline-date{color:var(--primary);font-weight:bold;margin-bottom:0.3rem;}
 
-.timeline-date{
-    color:var(--primary);
-    font-weight:bold;
-    margin-bottom:0.5rem;
+/* LISTS */
+.list li{
+    margin-bottom:0.8rem;
 }
 
 /* GRID */
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:1rem;
 }
 
 .project-card{
     border:1px solid #e5e7eb;
-    border-radius:12px;
-    padding:1.2rem;
-}
-
-/* LIST */
-.list{
-    list-style:none;
-}
-
-.list li{
-    padding:0.6rem 0;
-    border-bottom:1px solid #e5e7eb;
-}
-
-/* SKILLS */
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:1rem;
-}
-
-.skill-box{
-    background:#f8fafc;
     padding:1rem;
     border-radius:10px;
 }
 
-/* CONTACT */
-.contact-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.contact-buttons a{
-    text-decoration:none;
-    background:var(--primary);
-    color:white;
-    padding:10px 16px;
+/* TAGS */
+.tags{display:flex;flex-wrap:wrap;gap:10px;}
+.tag{
+    background:#dbeafe;
+    padding:8px 12px;
     border-radius:999px;
+    color:#1e40af;
 }
 
-input, textarea{
+/* CONTACT */
+input,textarea{
     width:100%;
-    padding:12px;
+    padding:10px;
     margin-top:10px;
-    border:1px solid #d1d5db;
-    border-radius:8px;
 }
 
 button{
     margin-top:10px;
+    padding:10px 14px;
     background:var(--primary);
     color:white;
     border:none;
-    padding:12px 20px;
     border-radius:8px;
-    cursor:pointer;
 }
 
-footer{
-    text-align:center;
-    margin-top:2rem;
-    color:var(--muted);
-}
-
-/* MOBILE */
 @media(max-width:900px){
-    body{ display:block; }
-    .sidebar{ width:100%; height:auto; position:relative; }
-    .hero h1{ font-size:2.2rem; }
+    body{display:block;}
+    .sidebar{width:100%;height:auto;position:relative;}
+    .hero h1{font-size:2rem;}
 }
 </style>
 </head>
@@ -286,22 +165,22 @@ footer{
 <nav class="sidebar">
 
 <div class="profile">
-    <img src="niravshah_github.jpg" alt="Nirav Shah">
+    <img src="niravshah_github.jpg">
     <h2>Nirav Shah</h2>
     <p>Research Software Engineer</p>
 </div>
 
 <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#research">Research Interests</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#software">Software</a></li>
-    <li><a href="#workshops">Workshops</a></li>
-    <li><a href="#blogs">Blogs</a></li>
-    <li><a href="#skills">Technical Skills</a></li>
-    <li><a href="#personal">Personal Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#workshops">Workshops</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#personal">Personal</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 
 </nav>
@@ -310,14 +189,7 @@ footer{
 
 <section class="hero">
 <h1>Nirav Shah</h1>
-
-<p>
-Research Software Engineer • Applied Mathematician • HPC • Scientific ML
-<br>
-University of Cambridge
-<br><br>
-<strong>Email:</strong> niravshahcolab@gmail.com
-</p>
+<p>Research Software Engineer • Scientific Computing • HPC • Scientific ML</p>
 
 <div class="social-links">
 <a href="mailto:niravshahcolab@gmail.com">Email</a>
@@ -325,155 +197,178 @@ University of Cambridge
 <a href="https://www.linkedin.com/in/nirav-shah-2409">LinkedIn</a>
 <a href="https://scholar.google.com/citations?user=M9_CPPkAAAAJ&hl=en">Scholar</a>
 </div>
+
+<p><strong>Email:</strong> niravshahcolab@gmail.com</p>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="card">
 <h2>About</h2>
 <p>
-Research Software Engineer working on scientific computing, high-performance computing,
-reduced-order modelling, and scientific machine learning across engineering and climate science.
+Research Software Engineer working on HPC, scientific machine learning,
+reduced order modelling and climate modelling software.
 </p>
 </section>
 
+<!-- RESEARCH -->
 <section id="research" class="card">
 <h2>Research Interests</h2>
 <div class="tags">
 <span class="tag">Scientific ML</span>
 <span class="tag">Reduced Order Modelling</span>
 <span class="tag">HPC</span>
-<span class="tag">Finite Element Methods</span>
-<span class="tag">Climate Modelling</span>
+<span class="tag">FEM</span>
+<span class="tag">Climate Science</span>
 </div>
 </section>
 
+<!-- EXPERIENCE (FULL RESTORED) -->
 <section id="experience" class="card">
-<h2>Experience</h2>
+<h2>Professional Experience</h2>
 
 <div class="timeline">
+
 <div class="timeline-item">
-<div class="timeline-date">2025 – Present</div>
+<div class="timeline-date">May 2025 – Present</div>
 <h3>Research Software Engineer</h3>
-<p>University of Cambridge</p>
+<p>Institute of Computing for Climate Science, University of Cambridge</p>
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">2022 – 2025</div>
+<div class="timeline-date">Oct 2022 – May 2025</div>
 <h3>Postdoctoral Research Associate</h3>
+<p>Exascale Computing & Reduced Order Modelling</p>
 <p>University of Cambridge</p>
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">2019 – 2020</div>
+<div class="timeline-date">Jun 2019 – Sep 2020</div>
 <h3>PhD Industrial Secondment</h3>
 <p>ArcelorMittal Asturias</p>
 </div>
+
+<div class="timeline-item">
+<div class="timeline-date">Jun 2012 – Aug 2015</div>
+<h3>Senior Engineer</h3>
+<p>Voith Hydro, India</p>
+</div>
+
 </div>
 </section>
 
+<!-- EDUCATION (FULL RESTORED) -->
 <section id="education" class="card">
 <h2>Education</h2>
 
 <div class="timeline">
+
 <div class="timeline-item">
 <div class="timeline-date">2018 – 2022</div>
-<h3>PhD</h3>
-<p>SISSA, Trieste</p>
+<h3>PhD – SISSA Trieste</h3>
+<p>Mathematical Analysis, Modelling and Applications</p>
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">2015 – 2018</div>
-<h3>MSc</h3>
-<p>University of Stuttgart</p>
+<h3>MSc – University of Stuttgart</h3>
+<p>Water Resources Engineering and Management</p>
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">2008 – 2012</div>
-<h3>BTech</h3>
-<p>SVNIT Surat</p>
+<h3>BTech – SVNIT Surat</h3>
+<p>Mechanical Engineering</p>
 </div>
+
 </div>
 </section>
 
+<!-- SOFTWARE -->
 <section id="software" class="card">
 <h2>Software</h2>
-
-<div class="grid">
-<div class="project-card">
-<h3>DLRBniCSx</h3>
-<p>Deep learning based reduced order modelling</p>
-</div>
-
-<div class="project-card">
-<h3>MDFEniCSx</h3>
-<p>Mesh deformation toolkit</p>
-</div>
-</div>
+<ul class="list">
+<li><a href="https://github.com/Wells-Group/dlrbnicsx">DLRBniCSx</a></li>
+<li><a href="https://github.com/niravshah241/MDFEniCSx">MDFEniCSx</a></li>
+</ul>
 </section>
 
+<!-- WORKSHOPS (RESTORED LINKS) -->
 <section id="workshops" class="card">
 <h2>Workshops</h2>
 <ul class="list">
-<li>Scientific ML for PDEs</li>
-<li>PDESoft 2024</li>
+<li><a href="https://excalibur-sysgenx.github.io/workshop/">Scientific ML & MOR for PDEs</a></li>
+<li><a href="https://2024.pdesoft.org/">PDESoft 2024</a></li>
 </ul>
 </section>
 
+<!-- BLOGS (RESTORED LINKS) -->
 <section id="blogs" class="card">
 <h2>Blogs</h2>
 <ul class="list">
-<li>ANN for PDEs</li>
-<li>Blast furnace modelling</li>
+
+<li><a href="https://www.romsoc.eu/artificial-neural-network-for-partial-differential-equations-from-learning-mapping-function-to-learning-operator/">
+ANN for PDEs
+</a></li>
+
+<li><a href="https://medium.com/sissa-mathlab/model-order-reduction-for-thermomechanical-phenomena-arising-in-blast-furnace-hearth-b819b813e223">
+Blast Furnace ROM
+</a></li>
+
+<li><a href="https://www.romsoc.eu/artificial-neural-network-and-data-driven-techniques-scientific-computing-in-the-era-of-emerging-technologies/">
+Data-driven Scientific Computing
+</a></li>
+
+<li><a href="https://www.romsoc.eu/thermo-mechanical-modeling-of-blast-furnace-hearth-for-ironmaking/">
+Thermo-mechanical Modelling
+</a></li>
+
 </ul>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="card">
 <h2>Technical Skills</h2>
 
-<div class="skills-grid">
-<div class="skill-box">Python, C++</div>
-<div class="skill-box">FEniCSx, PyTorch</div>
-<div class="skill-box">MPI, OpenMP, Slurm</div>
-<div class="skill-box">Docker, GitHub Actions</div>
-<div class="skill-box">Matplotlib, ParaView</div>
+<div class="grid">
+<div class="project-card">Python, C++</div>
+<div class="project-card">FEniCSx, PyTorch</div>
+<div class="project-card">MPI, OpenMP, Slurm</div>
+<div class="project-card">Docker, GitHub Actions</div>
 </div>
 </section>
 
+<!-- PERSONAL SKILLS -->
 <section id="personal" class="card">
 <h2>Personal Skills</h2>
 
 <p>
-Living in multiple countries has helped me develop strong intercultural awareness,
-adaptability, and communication skills in international research environments.
+Living in multiple countries has strengthened my intercultural awareness,
+communication skills, and adaptability in international research environments.
 </p>
 
-<div class="skills-grid">
-<div class="skill-box">
+<div class="grid">
+<div class="project-card">
 <h3>Languages</h3>
 English, German, Hindi, Marathi, Gujarati
 </div>
 
-<div class="skill-box">
+<div class="project-card">
 <h3>Interests</h3>
 Travelling, Photography, Cricket
 </div>
 </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="card">
 <h2>Contact</h2>
 
 <p><strong>Email:</strong> niravshahcolab@gmail.com</p>
 
-<div class="contact-buttons">
-<a href="mailto:niravshahcolab@gmail.com">Email</a>
-<a href="https://github.com/niravshah241">GitHub</a>
-<a href="https://linkedin.com">LinkedIn</a>
-</div>
-
 <form action="https://formsubmit.co/niravshahcolab@gmail.com" method="POST">
 <input type="text" name="name" placeholder="Name">
 <input type="email" name="email" placeholder="Email">
-<textarea name="message" rows="6" placeholder="Message"></textarea>
+<textarea rows="6" name="message" placeholder="Message"></textarea>
 <button type="submit">Send</button>
 </form>
 </section>
@@ -490,12 +385,9 @@ const links = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
 let current = "";
-
 sections.forEach(sec => {
 if (!sec.id) return;
-if (window.scrollY >= sec.offsetTop - 150) {
-current = sec.id;
-}
+if (window.scrollY >= sec.offsetTop - 150) current = sec.id;
 });
 
 links.forEach(link => {
