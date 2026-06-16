@@ -91,6 +91,11 @@ h2{color:var(--primary);margin-bottom:1rem;}
 
 .hero h1{font-size:3rem;}
 
+.hero p{
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
 .social-links{
     margin-top:1rem;
     display:flex;
@@ -149,7 +154,7 @@ h2{color:var(--primary);margin-bottom:1rem;}
 }
 
 /* LIST */
-.list li{margin-bottom:0.8rem;}
+.list li{margin-bottom:0.6rem;}
 
 /* FORM */
 input,textarea{
@@ -170,17 +175,17 @@ button{
     cursor:pointer;
 }
 
-/* ACTIVE LINK */
+/* ACTIVE NAV */
 .nav-links a.active{
     background:var(--primary);
     color:white;
 }
 
-/* MOBILE */
 @media(max-width:900px){
     body{display:block;}
     .sidebar{width:100%;height:auto;position:relative;}
     .hero h1{font-size:2rem;}
+    .hero p{white-space:normal;}
 }
 </style>
 </head>
@@ -198,7 +203,6 @@ button{
 
 <ul class="nav-links">
 <li><a href="#about">About</a></li>
-<li><a href="#research">Research Interests</a></li>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#education">Education</a></li>
 <li><a href="#software">Software</a></li>
@@ -218,9 +222,7 @@ button{
 <h1>Nirav Shah</h1>
 
 <p>
-High Performance Computing • Scientific Software Development • Scientific Machine Learning • Finite Element Method
-<br>
-Digital Twins • Engineering & Physics Simulation for Industrial Systems
+High Performance Computing • Scientific Software Development • Scientific Machine Learning • Finite Element Method • Digital Twins • Engineering & Physics Simulation for Industrial Systems
 </p>
 
 <div class="social-links">
@@ -230,24 +232,23 @@ Digital Twins • Engineering & Physics Simulation for Industrial Systems
 <a href="https://scholar.google.com/citations?user=M9_CPPkAAAAJ&hl=en">Google Scholar</a>
 <a href="https://orcid.org/0000-0002-6378-0898">ORCID</a>
 </div>
-
-<p><strong>Email:</strong> niravshahcolab@gmail.com</p>
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT (FULL RESTORED STRUCTURE) -->
 <section id="about" class="card">
 <h2>About</h2>
 
 <p>
 I am a Research Software Engineer and applied mathematician working in scientific computing, High Performance Computing, and physics-based engineering simulation.
+I focus on building scalable computational frameworks for real-world industrial and scientific problems.
 </p>
 
 <p>
-My work focuses on developing scalable computational methods for industrial and scientific applications.
+My work spans development of numerical methods and software for complex multiphysics systems and digital engineering applications.
 </p>
 
 <ul class="list">
-<li>Digital Twins for industrial systems</li>
+<li>Digital Twins for industrial systems and engineering applications</li>
 <li>Physics-based simulations in fluid and solid mechanics</li>
 <li>Finite Element Method (FEM) based numerical frameworks</li>
 <li>Reduced order modelling and surrogate models</li>
@@ -255,25 +256,11 @@ My work focuses on developing scalable computational methods for industrial and 
 </ul>
 
 <p>
-Experience spans hydropower engineering, steel manufacturing, and computational physics applications.
+I have worked across hydropower engineering, steel manufacturing, and computational physics research environments.
 </p>
 </section>
 
-<!-- RESEARCH -->
-<section id="research" class="card">
-<h2>Research Interests</h2>
-
-<div class="grid">
-<div class="project-card">Scientific Machine Learning</div>
-<div class="project-card">Reduced Order Modelling</div>
-<div class="project-card">High Performance Computing</div>
-<div class="project-card">Finite Element Method</div>
-<div class="project-card">Digital Twins</div>
-<div class="project-card">Engineering Simulation</div>
-</div>
-</section>
-
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE (FULL CONTENT RESTORED) -->
 <section id="experience" class="card">
 <h2>Professional Experience</h2>
 
@@ -282,35 +269,63 @@ Experience spans hydropower engineering, steel manufacturing, and computational 
 <div class="timeline-item">
 <div class="timeline-date">May 2025 – Present</div>
 <h3>Research Software Engineer</h3>
-<p>University of Cambridge</p>
+<p>Institute of Computing for Climate Science, University of Cambridge</p>
+<p>Development of scalable scientific software for climate modelling, focusing on High Performance Computing (MPI, OpenMP, Slurm, Score-P profiling), numerical stability, and software sustainability.</p>
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">October 2022 – May 2025</div>
 <h3>Postdoctoral Research Associate</h3>
-<p>University of Cambridge</p>
-<p>Exascale Computing and Reduced Order Modelling</p>
+<p>Department of Engineering, University of Cambridge</p>
+<p>Worked on Exascale computing and reduced order modelling for complex engineering systems, including development of surrogate models and efficient finite element frameworks.</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">June 2019 – September 2020</div>
+<h3>PhD Industrial Secondment</h3>
+<p>ArcelorMittal Innovación Investigación e Inversión S.L., Asturias</p>
+<p>Developed mathematical and computational models for thermomechanical processes in industrial steel manufacturing systems.</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">June 2012 – August 2015</div>
+<h3>Senior Engineer</h3>
+<p>Voith Hydro Private Limited, Noida</p>
+<p>Worked on turbine engineering design, hydraulic systems, and industrial energy systems.</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">March 2014 – August 2014</div>
+<h3>Engineer (Secondment)</h3>
+<p>Voith Hydro Holding GmbH & Co. KG, Heidenheim</p>
+<p>Hydraulic application design and turbine layout optimization.</p>
 </div>
 
 </div>
 </section>
 
-<!-- EDUCATION -->
+<!-- EDUCATION (FULL RESTORED) -->
 <section id="education" class="card">
 <h2>Education</h2>
 
 <div class="timeline">
 
 <div class="timeline-item">
-<div class="timeline-date">2018 – 2022</div>
-<h3>PhD</h3>
+<div class="timeline-date">April 2018 – April 2022</div>
+<h3>PhD – Mathematical Analysis, Modelling and Applications</h3>
 <p>SISSA, Trieste</p>
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">2015 – 2018</div>
-<h3>Master of Science</h3>
+<div class="timeline-date">September 2015 – March 2018</div>
+<h3>Master of Science – Water Resources Engineering and Management</h3>
 <p>University of Stuttgart</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">July 2008 – May 2012</div>
+<h3>Bachelor of Technology – Mechanical Engineering</h3>
+<p>SVNIT, Surat</p>
 </div>
 
 </div>
@@ -321,17 +336,18 @@ Experience spans hydropower engineering, steel manufacturing, and computational 
 <h2>Software Developed</h2>
 
 <ul class="list">
-<li>DLRBniCSx – Reduced Order Modelling framework</li>
-<li>MDFEniCSx – Finite Element Mesh Deformation Toolkit</li>
+<li>DLRBniCSx – Deep learning based reduced order modelling framework</li>
+<li>MDFEniCSx – Mesh deformation framework using FEniCSx</li>
 </ul>
 </section>
 
 <!-- WORKSHOPS -->
 <section id="workshops" class="card">
-<h2>Workshops</h2>
+<h2>Workshops Organised</h2>
 
 <ul class="list">
 <li>Scientific Machine Learning and Model Order Reduction for Partial Differential Equations</li>
+<li>PDESoft 2024 – Conference on Partial Differential Equations Software</li>
 </ul>
 </section>
 
@@ -341,6 +357,7 @@ Experience spans hydropower engineering, steel manufacturing, and computational 
 
 <ul class="list">
 <li>Artificial Neural Networks for Partial Differential Equations</li>
+<li>Model Order Reduction for Thermomechanical Systems in Industrial Applications</li>
 </ul>
 </section>
 
@@ -350,22 +367,22 @@ Experience spans hydropower engineering, steel manufacturing, and computational 
 
 <div class="grid">
 <div class="project-card">Python, C++</div>
-<div class="project-card">Finite Element Method</div>
-<div class="project-card">High Performance Computing</div>
-<div class="project-card">PyTorch</div>
+<div class="project-card">Finite Element Method (FEniCSx)</div>
+<div class="project-card">High Performance Computing (MPI, OpenMP, Slurm, Score-P Profiler)</div>
+<div class="project-card">Scientific Machine Learning (PyTorch)</div>
+<div class="project-card">Docker, GitHub CI/CD</div>
 </div>
 </section>
 
-<!-- PERSONAL (UPDATED) -->
+<!-- PERSONAL -->
 <section id="personal" class="card">
 <h2>Personal Skills</h2>
 
 <p>
-International experience has strengthened my communication skills, adaptability, and intercultural awareness in engineering and research environments.
+International research experience across multiple countries has strengthened my intercultural awareness, communication skills, and adaptability in collaborative engineering environments.
 </p>
 
 <div class="grid">
-
 <div class="project-card">
 <h3>Languages</h3>
 <p>English, German, Hindi, Marathi, Gujarati</p>
@@ -375,7 +392,6 @@ International experience has strengthened my communication skills, adaptability,
 <h3>Interests</h3>
 <p>Travelling, Photography, Cricket</p>
 </div>
-
 </div>
 </section>
 
@@ -385,22 +401,12 @@ International experience has strengthened my communication skills, adaptability,
 
 <p><strong>Email:</strong> niravshahcolab@gmail.com</p>
 
-<div class="social-links">
-<a href="mailto:niravshahcolab@gmail.com">Email</a>
-<a href="https://github.com/niravshah241">GitHub</a>
-<a href="https://linkedin.com/in/nirav-shah-2409">LinkedIn</a>
-<a href="https://orcid.org/0000-0002-6378-0898">ORCID</a>
-</div>
-
-<h3>Send a Message</h3>
-
-<form action="https://formsubmit.co/niravshahcolab@gmail.com" method="POST">
-<input type="text" name="name" placeholder="Your Name (optional)">
-<input type="email" name="email" placeholder="Your Email (optional)">
-<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+<form>
+<input type="text" placeholder="Name (optional)">
+<input type="email" placeholder="Email (optional)">
+<textarea placeholder="Message" rows="6"></textarea>
 <button type="submit">Send Message</button>
 </form>
-
 </section>
 
 </main>
@@ -409,24 +415,17 @@ International experience has strengthened my communication skills, adaptability,
 const sections = document.querySelectorAll("section");
 const links = document.querySelectorAll(".nav-links a");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            links.forEach(link => link.classList.remove("active"));
-            const activeLink = document.querySelector(
-                `.nav-links a[href="#${entry.target.id}"]`
-            );
-            if (activeLink) activeLink.classList.add("active");
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            links.forEach(l=>l.classList.remove("active"));
+            const a = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+            if(a) a.classList.add("active");
         }
     });
-}, {
-    rootMargin: "-40% 0px -55% 0px",
-    threshold: 0.1
-});
+},{rootMargin:"-40% 0px -55% 0px"});
 
-sections.forEach(section => {
-    if (section.id) observer.observe(section);
-});
+sections.forEach(s=>s.id && observer.observe(s));
 </script>
 
 </body>
