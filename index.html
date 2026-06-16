@@ -38,13 +38,21 @@ body{
     overflow-y:auto;
 }
 
-.profile{text-align:center;margin-bottom:2rem;}
+.profile{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
 .profile img{
-    width:140px;height:140px;border-radius:50%;
-    object-fit:cover;border:4px solid white;
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
 }
 
 .nav-links{list-style:none;}
+
 .nav-links a{
     display:block;
     padding:0.7rem 1rem;
@@ -52,11 +60,17 @@ body{
     text-decoration:none;
     border-radius:8px;
 }
+
 .nav-links a:hover{background:#1f2937;}
 .nav-links a.active{background:var(--primary);color:white;}
 
 /* CONTENT */
-.content{flex:1;padding:2rem;max-width:1200px;margin:auto;}
+.content{
+    flex:1;
+    padding:2rem;
+    max-width:1200px;
+    margin:auto;
+}
 
 .card{
     background:white;
@@ -82,8 +96,8 @@ h2{color:var(--primary);margin-bottom:1rem;}
 .social-links{
     margin-top:1rem;
     display:flex;
-    gap:10px;
     flex-wrap:wrap;
+    gap:10px;
 }
 
 .social-links a{
@@ -96,22 +110,31 @@ h2{color:var(--primary);margin-bottom:1rem;}
 }
 
 /* TIMELINE */
-.timeline{border-left:3px solid var(--primary);padding-left:2rem;}
-.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline{
+    border-left:3px solid var(--primary);
+    padding-left:2rem;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:2rem;
+}
+
 .timeline-item::before{
     content:"";
     position:absolute;
     left:-2.6rem;
     top:0.3rem;
-    width:14px;height:14px;
+    width:14px;
+    height:14px;
     border-radius:50%;
     background:var(--primary);
 }
-.timeline-date{color:var(--primary);font-weight:bold;margin-bottom:0.3rem;}
 
-/* LISTS */
-.list li{
-    margin-bottom:0.8rem;
+.timeline-date{
+    color:var(--primary);
+    font-weight:bold;
+    margin-bottom:0.3rem;
 }
 
 /* GRID */
@@ -136,21 +159,8 @@ h2{color:var(--primary);margin-bottom:1rem;}
     color:#1e40af;
 }
 
-/* CONTACT */
-input,textarea{
-    width:100%;
-    padding:10px;
-    margin-top:10px;
-}
-
-button{
-    margin-top:10px;
-    padding:10px 14px;
-    background:var(--primary);
-    color:white;
-    border:none;
-    border-radius:8px;
-}
+/* LIST */
+.list li{margin-bottom:0.8rem;}
 
 @media(max-width:900px){
     body{display:block;}
@@ -162,6 +172,7 @@ button{
 
 <body>
 
+<!-- SIDEBAR -->
 <nav class="sidebar">
 
 <div class="profile">
@@ -172,14 +183,14 @@ button{
 
 <ul class="nav-links">
 <li><a href="#about">About</a></li>
-<li><a href="#research">Research</a></li>
+<li><a href="#research">Research Interests</a></li>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#education">Education</a></li>
 <li><a href="#software">Software</a></li>
 <li><a href="#workshops">Workshops</a></li>
 <li><a href="#blogs">Blogs</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#personal">Personal</a></li>
+<li><a href="#skills">Technical Skills</a></li>
+<li><a href="#personal">Personal Skills</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
@@ -187,15 +198,22 @@ button{
 
 <main class="content">
 
+<!-- HERO -->
 <section class="hero">
 <h1>Nirav Shah</h1>
-<p>Research Software Engineer • Scientific Computing • HPC • Scientific ML</p>
+
+<p>
+Research Software Engineer • High Performance Computing • Scientific Machine Learning • Finite Element Methods
+<br>
+Digital Twins • Engineering & Physics Simulation for Industrial Problems
+</p>
 
 <div class="social-links">
 <a href="mailto:niravshahcolab@gmail.com">Email</a>
 <a href="https://github.com/niravshah241">GitHub</a>
 <a href="https://www.linkedin.com/in/nirav-shah-2409">LinkedIn</a>
-<a href="https://scholar.google.com/citations?user=M9_CPPkAAAAJ&hl=en">Scholar</a>
+<a href="https://scholar.google.com/citations?user=M9_CPPkAAAAJ&hl=en">Google Scholar</a>
+<a href="https://orcid.org/0000-0002-6378-0898">ORCID</a>
 </div>
 
 <p><strong>Email:</strong> niravshahcolab@gmail.com</p>
@@ -204,25 +222,41 @@ button{
 <!-- ABOUT -->
 <section id="about" class="card">
 <h2>About</h2>
+
 <p>
-Research Software Engineer working on HPC, scientific machine learning,
-reduced order modelling and climate modelling software.
+I am a Research Software Engineer and applied mathematician working at the intersection of
+scientific computing, engineering simulation, and High Performance Computing.
+<br><br>
+My work focuses on developing scalable scientific software for:
+<ul class="list">
+<li>Digital Twins for industrial systems</li>
+<li>Physics-based engineering simulations</li>
+<li>Reduced order modelling and surrogate models</li>
+<li>Scientific Machine Learning for Partial Differential Equations</li>
+<li>Finite Element Method based numerical methods</li>
+</ul>
+<br>
+I have worked across academia and industry in domains including hydropower engineering,
+steel manufacturing, and climate and fluid dynamics modelling.
 </p>
 </section>
 
 <!-- RESEARCH -->
 <section id="research" class="card">
 <h2>Research Interests</h2>
+
 <div class="tags">
-<span class="tag">Scientific ML</span>
+<span class="tag">Scientific Machine Learning</span>
 <span class="tag">Reduced Order Modelling</span>
-<span class="tag">HPC</span>
-<span class="tag">FEM</span>
-<span class="tag">Climate Science</span>
+<span class="tag">High Performance Computing</span>
+<span class="tag">Finite Element Method</span>
+<span class="tag">Digital Twins</span>
+<span class="tag">Engineering Simulation</span>
+<span class="tag">Physics-based Modelling</span>
 </div>
 </section>
 
-<!-- EXPERIENCE (FULL RESTORED) -->
+<!-- EXPERIENCE -->
 <section id="experience" class="card">
 <h2>Professional Experience</h2>
 
@@ -235,49 +269,52 @@ reduced order modelling and climate modelling software.
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">Oct 2022 – May 2025</div>
+<div class="timeline-date">October 2022 – May 2025</div>
 <h3>Postdoctoral Research Associate</h3>
-<p>Exascale Computing & Reduced Order Modelling</p>
+<p>Exascale Computing and Reduced Order Modelling</p>
 <p>University of Cambridge</p>
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">Jun 2019 – Sep 2020</div>
+<div class="timeline-date">June 2019 – September 2020</div>
 <h3>PhD Industrial Secondment</h3>
-<p>ArcelorMittal Asturias</p>
+<p>ArcelorMittal Innovación Investigación e Inversión S.L., Asturias</p>
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">Jun 2012 – Aug 2015</div>
+<div class="timeline-date">June 2012 – August 2015</div>
 <h3>Senior Engineer</h3>
-<p>Voith Hydro, India</p>
+<p>Voith Hydro Private Limited, India</p>
 </div>
 
 </div>
 </section>
 
-<!-- EDUCATION (FULL RESTORED) -->
+<!-- EDUCATION -->
 <section id="education" class="card">
 <h2>Education</h2>
 
 <div class="timeline">
 
 <div class="timeline-item">
-<div class="timeline-date">2018 – 2022</div>
-<h3>PhD – SISSA Trieste</h3>
+<div class="timeline-date">April 2018 – April 2022</div>
+<h3>PhD</h3>
 <p>Mathematical Analysis, Modelling and Applications</p>
+<p>SISSA, Trieste</p>
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">2015 – 2018</div>
-<h3>MSc – University of Stuttgart</h3>
+<div class="timeline-date">September 2015 – March 2018</div>
+<h3>Master of Science</h3>
 <p>Water Resources Engineering and Management</p>
+<p>University of Stuttgart</p>
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">2008 – 2012</div>
-<h3>BTech – SVNIT Surat</h3>
+<div class="timeline-date">July 2008 – May 2012</div>
+<h3>Bachelor of Technology</h3>
 <p>Mechanical Engineering</p>
+<p>SVNIT Surat</p>
 </div>
 
 </div>
@@ -285,43 +322,36 @@ reduced order modelling and climate modelling software.
 
 <!-- SOFTWARE -->
 <section id="software" class="card">
-<h2>Software</h2>
+<h2>Software Developed</h2>
+
 <ul class="list">
-<li><a href="https://github.com/Wells-Group/dlrbnicsx">DLRBniCSx</a></li>
-<li><a href="https://github.com/niravshah241/MDFEniCSx">MDFEniCSx</a></li>
+<li><a href="https://github.com/Wells-Group/dlrbnicsx">DLRBniCSx – Deep Learning based Reduced Order Modelling framework</a></li>
+<li><a href="https://github.com/niravshah241/MDFEniCSx">MDFEniCSx – Mesh Deformation for Finite Element simulations</a></li>
 </ul>
 </section>
 
-<!-- WORKSHOPS (RESTORED LINKS) -->
+<!-- WORKSHOPS -->
 <section id="workshops" class="card">
-<h2>Workshops</h2>
+<h2>Workshops Organised</h2>
+
 <ul class="list">
-<li><a href="https://excalibur-sysgenx.github.io/workshop/">Scientific ML & MOR for PDEs</a></li>
-<li><a href="https://2024.pdesoft.org/">PDESoft 2024</a></li>
+<li><a href="https://excalibur-sysgenx.github.io/workshop/">Scientific Machine Learning and Model Order Reduction for Partial Differential Equations</a></li>
+<li><a href="https://2024.pdesoft.org/">PDESoft 2024 – Conference on Partial Differential Equations Software</a></li>
 </ul>
 </section>
 
-<!-- BLOGS (RESTORED LINKS) -->
+<!-- BLOGS -->
 <section id="blogs" class="card">
 <h2>Blogs</h2>
+
 <ul class="list">
+<li><a href="https://www.romsoc.eu/artificial-neural-network-for-partial-differential-equations-from-learning-mapping-function-to-learning-operator/">Artificial Neural Networks for Partial Differential Equations</a></li>
 
-<li><a href="https://www.romsoc.eu/artificial-neural-network-for-partial-differential-equations-from-learning-mapping-function-to-learning-operator/">
-ANN for PDEs
-</a></li>
+<li><a href="https://medium.com/sissa-mathlab/model-order-reduction-for-thermomechanical-phenomena-arising-in-blast-furnace-hearth-b819b813e223">Model Order Reduction for Thermo-mechanical Phenomena in Blast Furnace Hearth</a></li>
 
-<li><a href="https://medium.com/sissa-mathlab/model-order-reduction-for-thermomechanical-phenomena-arising-in-blast-furnace-hearth-b819b813e223">
-Blast Furnace ROM
-</a></li>
+<li><a href="https://www.romsoc.eu/artificial-neural-network-and-data-driven-techniques-scientific-computing-in-the-era-of-emerging-technologies/">Data-driven Scientific Computing Techniques</a></li>
 
-<li><a href="https://www.romsoc.eu/artificial-neural-network-and-data-driven-techniques-scientific-computing-in-the-era-of-emerging-technologies/">
-Data-driven Scientific Computing
-</a></li>
-
-<li><a href="https://www.romsoc.eu/thermo-mechanical-modeling-of-blast-furnace-hearth-for-ironmaking/">
-Thermo-mechanical Modelling
-</a></li>
-
+<li><a href="https://www.romsoc.eu/thermo-mechanical-modeling-of-blast-furnace-hearth-for-ironmaking/">Thermo-mechanical Modelling of Blast Furnace Hearth for Ironmaking</a></li>
 </ul>
 </section>
 
@@ -331,18 +361,19 @@ Thermo-mechanical Modelling
 
 <div class="grid">
 <div class="project-card">Python, C++</div>
-<div class="project-card">FEniCSx, PyTorch</div>
-<div class="project-card">MPI, OpenMP, Slurm</div>
+<div class="project-card">Finite Element Method (FEniCSx)</div>
+<div class="project-card">PyTorch, Scientific Machine Learning</div>
+<div class="project-card">High Performance Computing (MPI, OpenMP, Slurm)</div>
 <div class="project-card">Docker, GitHub Actions</div>
 </div>
 </section>
 
-<!-- PERSONAL SKILLS -->
+<!-- PERSONAL -->
 <section id="personal" class="card">
 <h2>Personal Skills</h2>
 
 <p>
-Living in multiple countries has strengthened my intercultural awareness,
+Living and working across multiple countries has strengthened my intercultural awareness,
 communication skills, and adaptability in international research environments.
 </p>
 
@@ -365,17 +396,13 @@ Travelling, Photography, Cricket
 
 <p><strong>Email:</strong> niravshahcolab@gmail.com</p>
 
-<form action="https://formsubmit.co/niravshahcolab@gmail.com" method="POST">
-<input type="text" name="name" placeholder="Name">
-<input type="email" name="email" placeholder="Email">
-<textarea rows="6" name="message" placeholder="Message"></textarea>
-<button type="submit">Send</button>
-</form>
+<div class="social-links">
+<a href="mailto:niravshahcolab@gmail.com">Email</a>
+<a href="https://github.com/niravshah241">GitHub</a>
+<a href="https://linkedin.com/in/nirav-shah-2409">LinkedIn</a>
+<a href="https://orcid.org/0000-0002-6378-0898">ORCID</a>
+</div>
 </section>
-
-<footer>
-© 2026 Nirav Shah
-</footer>
 
 </main>
 
