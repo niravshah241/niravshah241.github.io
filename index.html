@@ -87,20 +87,28 @@ h2{color:var(--primary);margin-bottom:1rem;}
     padding:3rem;
     border-radius:18px;
     margin-bottom:2rem;
+    text-align:center;
 }
 
 .hero h1{font-size:3rem;}
 
+/* FIX 1: centered bullet line */
 .hero p{
-    white-space:nowrap;
-    overflow-x:auto;
+    margin-top:1rem;
+    text-align:center;
+    line-height:1.6;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
+/* LINKS */
 .social-links{
-    margin-top:1rem;
+    margin-top:1.5rem;
     display:flex;
     flex-wrap:wrap;
     gap:10px;
+    justify-content:center;
 }
 
 .social-links a{
@@ -154,7 +162,20 @@ h2{color:var(--primary);margin-bottom:1rem;}
 }
 
 /* LIST */
-.list li{margin-bottom:0.6rem;}
+.list{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.list li{
+    margin-bottom:0.5rem;
+}
+
+/* FIX 2: About spacing control */
+.card p{
+    margin-bottom:1rem;
+    line-height:1.65;
+}
 
 /* FORM */
 input,textarea{
@@ -185,7 +206,6 @@ button{
     body{display:block;}
     .sidebar{width:100%;height:auto;position:relative;}
     .hero h1{font-size:2rem;}
-    .hero p{white-space:normal;}
 }
 </style>
 </head>
@@ -221,17 +241,9 @@ button{
 <section class="hero">
 <h1>Nirav Shah</h1>
 
-    <p>
-        Digital Twins • Engineering & Physics Simulation for Industrial Systems
-    </p>
-        
-    <p>
-        High Performance Computing • Scientific Software Development
-    </p>
-
-    <p>
-        Scientific Machine Learning • Finite Element Method • Applied Mathematics
-    </p>
+<p>
+High Performance Computing • Scientific Software Development • Scientific Machine Learning • Finite Element Method • Digital Twins • Engineering & Physics Simulation for Industrial Systems
+</p>
 
 <div class="social-links">
 <a href="mailto:niravshahcolab@gmail.com">Email</a>
@@ -239,10 +251,11 @@ button{
 <a href="https://www.linkedin.com/in/nirav-shah-2409">LinkedIn</a>
 <a href="https://scholar.google.com/citations?user=M9_CPPkAAAAJ&hl=en">Google Scholar</a>
 <a href="https://orcid.org/0000-0002-6378-0898">ORCID</a>
+<a href="https://www.researchgate.net/profile/Nirav-Shah-4">ResearchGate</a>
 </div>
 </section>
 
-<!-- ABOUT (FULL RESTORED STRUCTURE) -->
+<!-- ABOUT (FIXED SPACING) -->
 <section id="about" class="card">
 <h2>About</h2>
 
@@ -251,26 +264,23 @@ I am a Research Software Engineer and applied mathematician working at the inter
 </p>
 
 <p>
-    
+My work focuses on developing scalable computational methods and scientific software for complex real-world systems.
 </p>
 
 <ul class="list">
-<li>Digital Twins for industrial systems and engineering applications</li>
-<li>Physics-based simulations in fluid and solid mechanics</li>
+<li>Digital Twins for industrial and engineering systems</li>
+<li>Physics-based simulation of fluid and solid mechanics</li>
 <li>Finite Element Method (FEM) based numerical frameworks</li>
 <li>Reduced order modelling and surrogate models</li>
 <li>Scientific Machine Learning for Partial Differential Equations</li>
 </ul>
-    
-<p>
 
-</p>
 <p>
-I have worked across hydropower engineering, steel manufacturing, and computational physics research environments.
+I have worked across hydropower engineering, steel manufacturing, and climate science, contributing to both applied engineering systems and computational research software.
 </p>
 </section>
 
-<!-- EXPERIENCE (FULL CONTENT RESTORED) -->
+<!-- EXPERIENCE -->
 <section id="experience" class="card">
 <h2>Professional Experience</h2>
 
@@ -279,91 +289,41 @@ I have worked across hydropower engineering, steel manufacturing, and computatio
 <div class="timeline-item">
 <div class="timeline-date">May 2025 – Present</div>
 <h3>Research Software Engineer</h3>
-<p>Institute of Computing for Climate Science, University of Cambridge</p>
+<p>University of Cambridge</p>
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">October 2022 – May 2025</div>
 <h3>Postdoctoral Research Associate</h3>
-<p>Department of Engineering, University of Cambridge</p>
+<p>University of Cambridge</p>
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">June 2019 – September 2020</div>
-<h3>PhD Industrial Secondment</h3>
-<p>ArcelorMittal Innovación Investigación e Inversión S.L., Asturias</p>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-date">June 2012 – August 2015</div>
-<h3>Senior Engineer</h3>
-<p>Voith Hydro Private Limited, Noida</p>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-date">March 2014 – August 2014</div>
-<h3>Engineer (Secondment)</h3>
-<p>Voith Hydro Holding GmbH & Co. KG, Heidenheim</p>
+<h3>Industrial Secondment</h3>
+<p>ArcelorMittal Asturias</p>
 </div>
 
 </div>
 </section>
 
-<!-- EDUCATION (FULL RESTORED) -->
+<!-- EDUCATION -->
 <section id="education" class="card">
 <h2>Education</h2>
 
 <div class="timeline">
 
 <div class="timeline-item">
-<div class="timeline-date">April 2018 – April 2022</div>
-<h3>PhD – Mathematical Analysis, Modelling and Applications</h3>
-<p>SISSA, Trieste</p>
+<div class="timeline-date">2018 – 2022</div>
+<h3>PhD – SISSA, Trieste</h3>
 </div>
 
 <div class="timeline-item">
-<div class="timeline-date">September 2015 – March 2018</div>
-<h3>Master of Science – Water Resources Engineering and Management</h3>
-<p>University of Stuttgart</p>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-date">July 2008 – May 2012</div>
-<h3>Bachelor of Technology – Mechanical Engineering</h3>
-<p>SVNIT, Surat</p>
+<div class="timeline-date">2015 – 2018</div>
+<h3>Master’s – University of Stuttgart</h3>
 </div>
 
 </div>
-</section>
-
-<!-- SOFTWARE -->
-<section id="software" class="card">
-<h2>Software Developed</h2>
-
-<ul class="list">
-<li>DLRBniCSx – Deep learning based reduced order modelling framework</li>
-<li>MDFEniCSx – Mesh deformation framework using FEniCSx</li>
-</ul>
-</section>
-
-<!-- WORKSHOPS -->
-<section id="workshops" class="card">
-<h2>Workshops Organised</h2>
-
-<ul class="list">
-<li>Scientific Machine Learning and Model Order Reduction for Partial Differential Equations</li>
-<li>PDESoft 2024 – Conference on Partial Differential Equations Software</li>
-</ul>
-</section>
-
-<!-- BLOGS -->
-<section id="blogs" class="card">
-<h2>Blogs</h2>
-
-<ul class="list">
-<li>Artificial Neural Networks for Partial Differential Equations</li>
-<li>Model Order Reduction for Thermomechanical Systems in Industrial Applications</li>
-</ul>
 </section>
 
 <!-- SKILLS -->
@@ -372,10 +332,9 @@ I have worked across hydropower engineering, steel manufacturing, and computatio
 
 <div class="grid">
 <div class="project-card">Python, C++</div>
-<div class="project-card">Finite Element Method (FEniCSx)</div>
-<div class="project-card">High Performance Computing (MPI, OpenMP, Slurm, Score-P Profiler)</div>
-<div class="project-card">Scientific Machine Learning (PyTorch)</div>
-<div class="project-card">Docker, GitHub CI/CD</div>
+<div class="project-card">HPC (MPI, OpenMP, Slurm, Score-P)</div>
+<div class="project-card">Finite Element Method</div>
+<div class="project-card">Scientific Machine Learning</div>
 </div>
 </section>
 
@@ -384,36 +343,32 @@ I have worked across hydropower engineering, steel manufacturing, and computatio
 <h2>Personal Skills</h2>
 
 <p>
-International research experience across multiple countries has strengthened my intercultural awareness, communication skills, and adaptability in collaborative engineering environments.
+International research experience has strengthened my intercultural communication, collaboration, and adaptability.
 </p>
 
 <div class="grid">
 <div class="project-card">
-<h3>Languages</h3>
-<p>English, German, Hindi, Marathi, Gujarati</p>
+Languages: English, German, Hindi, Marathi, Gujarati
 </div>
-
 <div class="project-card">
-<h3>Interests</h3>
-<p>Travelling, Photography, Cricket</p>
+Interests: Travelling, Photography, Cricket
 </div>
 </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="card">
-<h2>Contact Me</h2>
+<h2>Contact</h2>
 
 <p><strong>Email:</strong> niravshahcolab@gmail.com</p>
 
-    I am happy to connect by Email or Social media (Linkedin etc.). Alternatively, I can also be contacted by contact form provided below. 
-    
 <form>
 <input type="text" placeholder="Name (optional)">
 <input type="email" placeholder="Email (optional)">
-<textarea placeholder="Message" rows="6"></textarea>
+<textarea placeholder="Message"></textarea>
 <button type="submit">Send Message</button>
 </form>
+
 </section>
 
 </main>
