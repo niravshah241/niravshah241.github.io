@@ -150,17 +150,27 @@ h2{color:var(--primary);margin-bottom:1rem;}
     border-radius:10px;
 }
 
-/* TAGS */
-.tags{display:flex;flex-wrap:wrap;gap:10px;}
-.tag{
-    background:#dbeafe;
-    padding:8px 12px;
-    border-radius:999px;
-    color:#1e40af;
-}
-
 /* LIST */
 .list li{margin-bottom:0.8rem;}
+
+/* FORM */
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 14px;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
 
 @media(max-width:900px){
     body{display:block;}
@@ -205,7 +215,7 @@ h2{color:var(--primary);margin-bottom:1rem;}
 <p>
 Research Software Engineer • High Performance Computing • Scientific Machine Learning • Finite Element Methods
 <br>
-Digital Twins • Engineering & Physics Simulation for Industrial Problems
+Digital Twins • Engineering & Physics Simulation for Industrial Systems
 </p>
 
 <div class="social-links">
@@ -224,20 +234,25 @@ Digital Twins • Engineering & Physics Simulation for Industrial Problems
 <h2>About</h2>
 
 <p>
-I am a Research Software Engineer and applied mathematician working at the intersection of
-scientific computing, engineering simulation, and High Performance Computing.
-<br><br>
-My work focuses on developing scalable scientific software for:
+I am a Research Software Engineer and applied mathematician working in scientific computing,
+High Performance Computing, and physics-based engineering simulation.
+</p>
+
+<p>
+My work focuses on developing scalable computational methods and software for:
+</p>
+
 <ul class="list">
-<li>Digital Twins for industrial systems</li>
-<li>Physics-based engineering simulations</li>
+<li>Digital Twins for industrial and engineering systems</li>
+<li>Physics-based simulations in fluid and solid mechanics</li>
+<li>Finite Element Method (FEM) based numerical frameworks</li>
 <li>Reduced order modelling and surrogate models</li>
 <li>Scientific Machine Learning for Partial Differential Equations</li>
-<li>Finite Element Method based numerical methods</li>
 </ul>
-<br>
-I have worked across academia and industry in domains including hydropower engineering,
-steel manufacturing, and climate and fluid dynamics modelling.
+
+<p>
+I have worked across academia and industry including hydropower engineering,
+steel manufacturing, and computational physics applications.
 </p>
 </section>
 
@@ -245,14 +260,13 @@ steel manufacturing, and climate and fluid dynamics modelling.
 <section id="research" class="card">
 <h2>Research Interests</h2>
 
-<div class="tags">
-<span class="tag">Scientific Machine Learning</span>
-<span class="tag">Reduced Order Modelling</span>
-<span class="tag">High Performance Computing</span>
-<span class="tag">Finite Element Method</span>
-<span class="tag">Digital Twins</span>
-<span class="tag">Engineering Simulation</span>
-<span class="tag">Physics-based Modelling</span>
+<div class="grid">
+<div class="project-card">Scientific Machine Learning</div>
+<div class="project-card">Reduced Order Modelling</div>
+<div class="project-card">High Performance Computing</div>
+<div class="project-card">Finite Element Method</div>
+<div class="project-card">Digital Twins</div>
+<div class="project-card">Engineering Simulation</div>
 </div>
 </section>
 
@@ -271,14 +285,14 @@ steel manufacturing, and climate and fluid dynamics modelling.
 <div class="timeline-item">
 <div class="timeline-date">October 2022 – May 2025</div>
 <h3>Postdoctoral Research Associate</h3>
-<p>Exascale Computing and Reduced Order Modelling</p>
 <p>University of Cambridge</p>
+<p>Exascale Computing and Reduced Order Modelling</p>
 </div>
 
 <div class="timeline-item">
 <div class="timeline-date">June 2019 – September 2020</div>
 <h3>PhD Industrial Secondment</h3>
-<p>ArcelorMittal Innovación Investigación e Inversión S.L., Asturias</p>
+<p>ArcelorMittal Asturias, Spain</p>
 </div>
 
 <div class="timeline-item">
@@ -325,8 +339,8 @@ steel manufacturing, and climate and fluid dynamics modelling.
 <h2>Software Developed</h2>
 
 <ul class="list">
-<li><a href="https://github.com/Wells-Group/dlrbnicsx">DLRBniCSx – Deep Learning based Reduced Order Modelling framework</a></li>
-<li><a href="https://github.com/niravshah241/MDFEniCSx">MDFEniCSx – Mesh Deformation for Finite Element simulations</a></li>
+<li><a href="https://github.com/Wells-Group/dlrbnicsx">DLRBniCSx – Deep Learning based Reduced Order Modelling</a></li>
+<li><a href="https://github.com/niravshah241/MDFEniCSx">MDFEniCSx – Finite Element Mesh Deformation Toolkit</a></li>
 </ul>
 </section>
 
@@ -347,11 +361,11 @@ steel manufacturing, and climate and fluid dynamics modelling.
 <ul class="list">
 <li><a href="https://www.romsoc.eu/artificial-neural-network-for-partial-differential-equations-from-learning-mapping-function-to-learning-operator/">Artificial Neural Networks for Partial Differential Equations</a></li>
 
-<li><a href="https://medium.com/sissa-mathlab/model-order-reduction-for-thermomechanical-phenomena-arising-in-blast-furnace-hearth-b819b813e223">Model Order Reduction for Thermo-mechanical Phenomena in Blast Furnace Hearth</a></li>
+<li><a href="https://medium.com/sissa-mathlab/model-order-reduction-for-thermomechanical-phenomena-arising-in-blast-furnace-hearth-b819b813e223">Model Order Reduction for Thermo-mechanical Phenomena in Industrial Systems</a></li>
 
 <li><a href="https://www.romsoc.eu/artificial-neural-network-and-data-driven-techniques-scientific-computing-in-the-era-of-emerging-technologies/">Data-driven Scientific Computing Techniques</a></li>
 
-<li><a href="https://www.romsoc.eu/thermo-mechanical-modeling-of-blast-furnace-hearth-for-ironmaking/">Thermo-mechanical Modelling of Blast Furnace Hearth for Ironmaking</a></li>
+<li><a href="https://www.romsoc.eu/thermo-mechanical-modeling-of-blast-furnace-hearth-for-ironmaking/">Thermo-mechanical Modelling for Industrial Ironmaking Systems</a></li>
 </ul>
 </section>
 
@@ -362,7 +376,7 @@ steel manufacturing, and climate and fluid dynamics modelling.
 <div class="grid">
 <div class="project-card">Python, C++</div>
 <div class="project-card">Finite Element Method (FEniCSx)</div>
-<div class="project-card">PyTorch, Scientific Machine Learning</div>
+<div class="project-card">Scientific Machine Learning (PyTorch)</div>
 <div class="project-card">High Performance Computing (MPI, OpenMP, Slurm)</div>
 <div class="project-card">Docker, GitHub Actions</div>
 </div>
@@ -373,7 +387,7 @@ steel manufacturing, and climate and fluid dynamics modelling.
 <h2>Personal Skills</h2>
 
 <p>
-Living and working across multiple countries has strengthened my intercultural awareness,
+Living in multiple countries has strengthened my intercultural awareness,
 communication skills, and adaptability in international research environments.
 </p>
 
@@ -390,7 +404,7 @@ Travelling, Photography, Cricket
 </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT (UPDATED FORM OPTIONAL FIELDS) -->
 <section id="contact" class="card">
 <h2>Contact</h2>
 
@@ -402,6 +416,22 @@ Travelling, Photography, Cricket
 <a href="https://linkedin.com/in/nirav-shah-2409">LinkedIn</a>
 <a href="https://orcid.org/0000-0002-6378-0898">ORCID</a>
 </div>
+
+<br>
+
+<h3>Send a Message</h3>
+
+<form action="https://formsubmit.co/niravshahcolab@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name (optional)">
+
+<input type="email" name="email" placeholder="Your Email (optional)">
+
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
 </section>
 
 </main>
