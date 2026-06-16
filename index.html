@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -34,10 +33,7 @@ body{
     display:flex;
 }
 
-/* ==========================
-   SIDEBAR
-========================== */
-
+/* SIDEBAR */
 .sidebar{
     width:280px;
     height:100vh;
@@ -99,10 +95,7 @@ body{
     color:white;
 }
 
-/* ==========================
-   MAIN CONTENT
-========================== */
-
+/* CONTENT */
 .content{
     flex:1;
     max-width:1200px;
@@ -144,6 +137,7 @@ body{
     font-weight:bold;
 }
 
+/* SECTIONS */
 section{
     margin-bottom:2rem;
 }
@@ -160,10 +154,7 @@ section{
     color:var(--primary);
 }
 
-/* ==========================
-   RESEARCH INTERESTS
-========================== */
-
+/* TAGS */
 .tags{
     display:flex;
     flex-wrap:wrap;
@@ -178,14 +169,10 @@ section{
     font-weight:600;
 }
 
-/* ==========================
-   TIMELINE
-========================== */
-
+/* TIMELINE */
 .timeline{
     border-left:3px solid var(--primary);
     padding-left:2rem;
-    margin-left:0.5rem;
 }
 
 .timeline-item{
@@ -210,19 +197,7 @@ section{
     margin-bottom:0.5rem;
 }
 
-.timeline-item h3{
-    margin-bottom:0.4rem;
-}
-
-.timeline-item p{
-    color:var(--muted);
-    line-height:1.6;
-}
-
-/* ==========================
-   PROJECT CARDS
-========================== */
-
+/* GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -235,25 +210,7 @@ section{
     padding:1.2rem;
 }
 
-.project-card h3{
-    margin-bottom:0.75rem;
-}
-
-.project-card p{
-    margin-bottom:1rem;
-    color:var(--muted);
-}
-
-.project-card a{
-    text-decoration:none;
-    color:var(--primary);
-    font-weight:bold;
-}
-
-/* ==========================
-   LISTS
-========================== */
-
+/* LIST */
 .list{
     list-style:none;
 }
@@ -263,10 +220,7 @@ section{
     border-bottom:1px solid #e5e7eb;
 }
 
-/* ==========================
-   SKILLS
-========================== */
-
+/* SKILLS */
 .skills-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -279,20 +233,11 @@ section{
     border-radius:10px;
 }
 
-.skill-box h3{
-    margin-bottom:0.75rem;
-    color:var(--primary);
-}
-
-/* ==========================
-   CONTACT
-========================== */
-
+/* CONTACT */
 .contact-buttons{
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    margin-top:1rem;
 }
 
 .contact-buttons a{
@@ -303,20 +248,16 @@ section{
     border-radius:999px;
 }
 
-form{
-    margin-top:2rem;
-}
-
-input,
-textarea{
+input, textarea{
     width:100%;
     padding:12px;
-    margin-bottom:1rem;
+    margin-top:10px;
     border:1px solid #d1d5db;
     border-radius:8px;
 }
 
 button{
+    margin-top:10px;
     background:var(--primary);
     color:white;
     border:none;
@@ -325,49 +266,26 @@ button{
     cursor:pointer;
 }
 
-button:hover{
-    background:var(--primary-dark);
-}
-
-/* ==========================
-   FOOTER
-========================== */
-
+/* FOOTER */
 footer{
     text-align:center;
     margin-top:2rem;
     color:var(--muted);
 }
 
-/* ==========================
-   MOBILE
-========================== */
-
+/* MOBILE */
 @media(max-width:900px){
-
-    body{
-        display:block;
-    }
-
-    .sidebar{
-        position:relative;
-        width:100%;
-        height:auto;
-    }
-
-    .hero h1{
-        font-size:2.2rem;
-    }
+    body{ display:block; }
+    .sidebar{ width:100%; height:auto; position:relative; }
+    .hero h1{ font-size:2.2rem; }
 }
 </style>
-
 </head>
 
 <body>
 
 <nav class="sidebar">
 
-```
 <div class="profile">
     <img src="niravshah_github.jpg" alt="Nirav Shah">
     <h2>Nirav Shah</h2>
@@ -385,308 +303,142 @@ footer{
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
 </ul>
-```
 
 </nav>
 
 <main class="content">
 
 <section class="hero">
-
-```
 <h1>Nirav Shah</h1>
-
-<p>
-    Research Software Engineer • Applied Mathematician • Scientific Computing Specialist
-    <br>
-    University of Cambridge
-</p>
+<p>Research Software Engineer • Applied Mathematician • HPC • Scientific ML</p>
 
 <div class="social-links">
-    <a href="mailto:niravshahcolab@gmail.com">Email</a>
-    <a href="https://github.com/niravshah241">GitHub</a>
-    <a href="https://www.linkedin.com/in/nirav-shah-2409">LinkedIn</a>
-    <a href="https://scholar.google.com/citations?user=M9_CPPkAAAAJ&hl=en">Google Scholar</a>
+<a href="mailto:niravshahcolab@gmail.com">Email</a>
+<a href="https://github.com/niravshah241">GitHub</a>
+<a href="https://www.linkedin.com/in/nirav-shah-2409">LinkedIn</a>
+<a href="https://scholar.google.com/citations?user=M9_CPPkAAAAJ&hl=en">Scholar</a>
 </div>
-```
-
 </section>
 
 <section id="about" class="card">
-    <h2>About Me</h2>
-
-```
+<h2>About</h2>
 <p>
-    I am an engineer and applied mathematician with expertise in scientific software development,
-    high-performance computing, reduced-order modelling, scientific machine learning, and finite
-    element methods. My work spans climate science, industrial digital twins, engineering
-    simulations, and open-source scientific software development.
-    <br><br>
-    I currently work as Research Software Engineer at the Institute of Computing for Climate
-    Science, University of Cambridge, where I contribute to the development of scalable climate
-    modelling software and sustainable scientific computing practices.
+Research Software Engineer working on scientific computing, HPC,
+reduced order modelling, and scientific machine learning.
 </p>
-```
-
 </section>
 
 <section id="research" class="card">
-
-```
 <h2>Research Interests</h2>
-
 <div class="tags">
-    <span class="tag">Scientific Machine Learning</span>
-    <span class="tag">Reduced Order Modelling</span>
-    <span class="tag">High Performance Computing</span>
-    <span class="tag">Finite Element Methods</span>
-    <span class="tag">Climate Modelling</span>
-    <span class="tag">Scientific Software Engineering</span>
-    <span class="tag">Digital Twins</span>
+<span class="tag">Scientific ML</span>
+<span class="tag">ROM</span>
+<span class="tag">HPC</span>
+<span class="tag">FEM</span>
+<span class="tag">Climate Modelling</span>
 </div>
-```
-
 </section>
 
 <section id="experience" class="card">
-
-```
-<h2>Professional Experience</h2>
-
+<h2>Experience</h2>
 <div class="timeline">
-
-    <div class="timeline-item">
-        <div class="timeline-date">May 2025 – Present</div>
-        <h3>Research Software Engineer</h3>
-        <p>Institute of Computing for Climate Science, University of Cambridge</p>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">October 2022 – May 2025</div>
-        <h3>Postdoctoral Research Associate</h3>
-        <p>Exascale Computing and Reduced Order Modelling</p>
-        <p>Department of Engineering, University of Cambridge</p>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">June 2019 – September 2020</div>
-        <h3>PhD Fellow (Industrial Secondment)</h3>
-        <p>ArcelorMittal Innovación Investigación e Inversion S.L. (AMIII), Asturias</p>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">June 2012 – August 2015</div>
-        <h3>Senior Engineer</h3>
-        <p>Voith Hydro Private Limited, Noida</p>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">March 2014 – August 2014</div>
-        <h3>Engineer (International Secondment)</h3>
-        <p>Voith Hydro Holding GmbH & Co. KG, Heidenheim</p>
-    </div>
-
+<div class="timeline-item">
+<div class="timeline-date">2025 – Present</div>
+<h3>Research Software Engineer</h3>
+<p>University of Cambridge</p>
 </div>
-```
-
+</div>
 </section>
 
 <section id="education" class="card">
-
-```
 <h2>Education</h2>
-
 <div class="timeline">
-
-    <div class="timeline-item">
-        <div class="timeline-date">April 2018 – April 2022</div>
-        <h3>PhD Fellow</h3>
-        <p>Mathematical Analysis, Modelling and Applications</p>
-        <p>SISSA, Trieste</p>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">September 2015 – March 2018</div>
-        <h3>Master of Science</h3>
-        <p>Water Resources Engineering and Management</p>
-        <p>University of Stuttgart</p>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">July 2008 – May 2012</div>
-        <h3>Bachelor of Technology</h3>
-        <p>Mechanical Engineering</p>
-        <p>SVNIT Surat</p>
-    </div>
-
+<div class="timeline-item">
+<div class="timeline-date">2018 – 2022</div>
+<h3>PhD</h3>
+<p>SISSA, Trieste</p>
 </div>
-```
-
+</div>
 </section>
 
 <section id="software" class="card">
-
-```
-<h2>Software Development</h2>
-
+<h2>Software</h2>
 <div class="grid">
-
-    <div class="project-card">
-        <h3>DLRBniCSx</h3>
-        <p>Deep-learning-based reduced order modelling framework built on PyTorch, RBniCSx and FEniCSx.</p>
-        <a href="https://github.com/Wells-Group/dlrbnicsx">View Project</a>
-    </div>
-
-    <div class="project-card">
-        <h3>MDFEniCSx</h3>
-        <p>Mesh deformation toolkit for FEniCSx.</p>
-        <a href="https://github.com/niravshah241/MDFEniCSx">View Project</a>
-    </div>
-
+<div class="project-card">
+<h3>DLRBniCSx</h3>
+<p>ROM with deep learning</p>
 </div>
-```
-
+</div>
 </section>
 
 <section id="workshops" class="card">
-
-```
-<h2>Workshops Organised</h2>
-
+<h2>Workshops</h2>
 <ul class="list">
-    <li><a href="https://excalibur-sysgenx.github.io/workshop/">Scientific Machine Learning and Model Order Reduction for PDEs</a></li>
-    <li><a href="https://2024.pdesoft.org/">PDESoft 2024</a></li>
+<li>Scientific ML Workshop</li>
+<li>PDESoft 2024</li>
 </ul>
-```
-
 </section>
 
 <section id="blogs" class="card">
-
-```
-<h2>Blogs and Outreach</h2>
-
+<h2>Blogs</h2>
 <ul class="list">
-    <li><a href="https://www.romsoc.eu/artificial-neural-network-for-partial-differential-equations-from-learning-mapping-function-to-learning-operator/">Artificial Neural Networks for PDEs</a></li>
-    <li><a href="https://medium.com/sissa-mathlab/model-order-reduction-for-thermomechanical-phenomena-arising-in-blast-furnace-hearth-b819b813e223">Model Order Reduction for Blast Furnace Hearth</a></li>
-    <li><a href="https://www.romsoc.eu/artificial-neural-network-and-data-driven-techniques-scientific-computing-in-the-era-of-emerging-technologies/">Data-driven Scientific Computing</a></li>
-    <li><a href="https://www.romsoc.eu/thermo-mechanical-modeling-of-blast-furnace-hearth-for-ironmaking/">Thermo-mechanical Modelling for Ironmaking</a></li>
+<li>ANN for PDEs</li>
+<li>ROM for blast furnace</li>
 </ul>
-```
-
 </section>
 
 <section id="skills" class="card">
-
-```
-<h2>Technical Skills</h2>
-
+<h2>Skills</h2>
 <div class="skills-grid">
-
-    <div class="skill-box">
-        <h3>Programming</h3>
-        Python, C++
-    </div>
-
-    <div class="skill-box">
-        <h3>Scientific Computing</h3>
-        FEniCSx, RBniCSx, PyTorch
-    </div>
-
-    <div class="skill-box">
-        <h3>HPC</h3>
-        MPI, OpenMP, Slurm, Score-P
-    </div>
-
-    <div class="skill-box">
-        <h3>DevOps</h3>
-        Docker, GitHub Actions, Bash
-    </div>
-
-    <div class="skill-box">
-        <h3>Visualisation</h3>
-        Matplotlib, ParaView
-    </div>
-
-    <div class="skill-box">
-        <h3>Languages</h3>
-        English, German, Hindi, Marathi, Gujarati
-    </div>
-
+<div class="skill-box">Python, C++</div>
+<div class="skill-box">FEniCSx, PyTorch</div>
+<div class="skill-box">MPI, OpenMP</div>
 </div>
-```
-
 </section>
 
 <section id="contact" class="card">
-
-```
 <h2>Contact</h2>
 
-<p>
-    I am always happy to discuss scientific computing,
-    software engineering, HPC, reduced-order modelling,
-    and potential collaborations.
-</p>
-
 <div class="contact-buttons">
-    <a href="mailto:niravshahcolab@gmail.com">Email</a>
-    <a href="https://github.com/niravshah241">GitHub</a>
-    <a href="https://www.linkedin.com/in/nirav-shah-2409">LinkedIn</a>
-    <a href="https://orcid.org/0000-0002-6378-0898">ORCID</a>
-    <a href="https://www.researchgate.net/profile/Nirav-Shah-4">ResearchGate</a>
+<a href="mailto:niravshahcolab@gmail.com">Email</a>
+<a href="https://github.com/niravshah241">GitHub</a>
 </div>
 
 <form action="https://formsubmit.co/niravshahcolab@gmail.com" method="POST">
-
-    <input type="text" name="name" placeholder="Your Name">
-
-    <input type="email" name="email" placeholder="Your Email">
-
-    <textarea name="message"
-              rows="8"
-              placeholder="Your Message"
-              required></textarea>
-
-    <button type="submit">Send Message</button>
-
+<input type="text" name="name" placeholder="Name">
+<input type="email" name="email" placeholder="Email">
+<textarea name="message" rows="6" placeholder="Message" required></textarea>
+<button type="submit">Send</button>
 </form>
-```
 
 </section>
 
 <footer>
-    © 2026 Nirav Shah. All rights reserved.
+© 2026 Nirav Shah
 </footer>
 
 </main>
 
 <script>
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
+const links = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
+let current = "";
 
-    let current = "";
+sections.forEach(sec => {
+if (!sec.id) return;
+if (window.scrollY >= sec.offsetTop - 150) {
+current = sec.id;
+}
+});
 
-    sections.forEach(section => {
-
-        const top = section.offsetTop - 150;
-
-        if (window.scrollY >= top) {
-            current = section.getAttribute("id");
-        }
-    });
-
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if(link.getAttribute("href") === "#" + current){
-            link.classList.add("active");
-        }
-    });
-
+links.forEach(link => {
+link.classList.remove("active");
+if (link.getAttribute("href") === "#" + current) {
+link.classList.add("active");
+}
+});
 });
 </script>
 
