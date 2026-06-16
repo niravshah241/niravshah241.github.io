@@ -1,9 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nirav Shah | Research Software Engineer</title>
+
+<style>
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1e40af;
+    --bg:#f5f7fa;
+    --text:#1f2937;
+    --sidebar:#111827;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+
+body{
+    font-family:Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:280px;
+    height:100vh;
+    position:sticky;
+    top:0;
+    background:var(--sidebar);
+    color:white;
+    padding:2rem;
+    overflow-y:auto;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.profile img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+}
+
+.nav-links{list-style:none;}
+
+.nav-links a{
+    display:block;
+    padding:0.7rem 1rem;
+    color:#cbd5e1;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.nav-links a:hover{background:#1f2937;}
+.nav-links a.active{background:var(--primary);color:white;}
+
+/* CONTENT */
+.content{
+    flex:1;
+    padding:2rem;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:2rem;
+    border-radius:16px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom:2rem;
+}
+
+h2{color:var(--primary);margin-bottom:1rem;}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+    color:white;
+    padding:3rem;
+    border-radius:18px;
+    margin-bottom:2rem;
+    text-align:center;
+}
+
+.hero h1{font-size:3rem;}
+
+.hero p{
+    margin-top:1rem;
+    line-height:1.6;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.social-links{
+    margin-top:1.5rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+}
+
+.social-links a{
+    background:white;
+    color:var(--primary);
+    padding:10px 14px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* TIMELINE */
+.timeline{
+    border-left:3px solid var(--primary);
+    padding-left:2rem;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:2rem;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-2.6rem;
+    top:0.3rem;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:var(--primary);
+}
+
+.timeline-date{
+    color:var(--primary);
+    font-weight:bold;
+    margin-bottom:0.3rem;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1rem;
+}
+
+.project-card{
+    border:1px solid #e5e7eb;
+    padding:1rem;
+    border-radius:10px;
+}
+
+/* LIST */
+.list{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.list li{
+    margin-bottom:0.5rem;
+}
+
+/* FORM */
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 14px;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ACTIVE NAV */
+.nav-links a.active{
+    background:var(--primary);
+    color:white;
+}
+
+@media(max-width:900px){
+    body{display:block;}
+    .sidebar{width:100%;height:auto;position:relative;}
+    .hero h1{font-size:2rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+
+<div class="profile">
+    <img src="niravshah_github.jpg">
+    <h2>Nirav Shah</h2>
+    <p>Research Software Engineer</p>
+</div>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#workshops">Workshops</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#skills">Technical Skills</a></li>
+<li><a href="#personal">Personal Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<main class="content">
+
+<!-- HERO -->
+<section class="hero">
+<h1>Nirav Shah</h1>
+
+<p>
+High Performance Computing • Scientific Software Development • Scientific Machine Learning • Finite Element Method • Digital Twins • Engineering & Physics Simulation for Industrial Systems
+</p>
+
+<div class="social-links">
+<a href="mailto:niravshahcolab@gmail.com">Email</a>
+<a href="https://github.com/niravshah241">GitHub</a>
+<a href="https://www.linkedin.com/in/nirav-shah-2409">LinkedIn</a>
+<a href="https://scholar.google.com/citations?user=M9_CPPkAAAAJ&hl=en">Google Scholar</a>
+<a href="https://orcid.org/0000-0002-6378-0898">ORCID</a>
+<a href="https://www.researchgate.net/profile/Nirav-Shah-4">ResearchGate</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="card">
+<h2>About</h2>
+
+<p>
+I am a Research Software Engineer and applied mathematician working at the intersection of scientific computing, High Performance Computing (HPC), and physics-based engineering simulation.
+</p>
+
+<p>
+My work focuses on developing scalable computational frameworks for large-scale scientific and industrial applications, including climate modelling and physics-based engineering systems.
+</p>
+
+<p>
+A key part of my work involves building parallel scientific software systems with emphasis on performance, numerical accuracy, and software sustainability on modern HPC architectures.
+</p>
+
+<ul class="list">
+<li>Parallel computing frameworks for large-scale simulation</li>
+<li>High Performance Computing (MPI, OpenMP, Slurm, Score-P)</li>
+<li>Software sustainability and long-term maintainability</li>
+<li>Digital Twins for industrial systems</li>
+<li>Finite Element Method (FEM) and numerical PDE solvers</li>
+<li>Scientific Machine Learning for physics-based modelling</li>
+</ul>
+
+<p>
+I have worked across hydropower engineering, steel manufacturing, and climate science.
+</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="card">
+<h2>Professional Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-date">May 2025 – Present</div>
+<h3>Research Software Engineer</h3>
+<p>University of Cambridge</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">October 2022 – May 2025</div>
+<h3>Postdoctoral Research Associate</h3>
+<p>University of Cambridge</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">June 2019 – September 2020</div>
+<h3>Industrial Secondment</h3>
+<p>ArcelorMittal Asturias</p>
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="card">
+<h2>Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-date">2018 – 2022</div>
+<h3>PhD – Mathematical Analysis, Modelling and Applications</h3>
+<p>Scuola Internazionale Superiore di Studi Avanzati, Trieste</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">2015 – 2018</div>
+<h3>Master of Science – Water Resources Engineering and Management</h3>
+<p>University of Stuttgart</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">2008 – 2012</div>
+<h3>Bachelor of Technology – Mechanical Engineering</h3>
+<p>Sardar Vallabhbhai National Institute of Technology, Surat</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="card">
+<h2>Technical Skills</h2>
+
+<div class="grid">
+<div class="project-card">Python, C++</div>
+<div class="project-card">High Performance Computing (MPI, OpenMP, Slurm, Score-P)</div>
+<div class="project-card">Finite Element Method</div>
+<div class="project-card">Scientific Machine Learning</div>
+</div>
+</section>
+
+<!-- PERSONAL -->
+<section id="personal" class="card">
+<h2>Personal Skills</h2>
+
+<p>
+International research experience has strengthened my intercultural communication and collaboration skills.
+</p>
+
+<div class="grid">
+<div class="project-card">
+Languages: English, German, Hindi, Marathi, Gujarati
+</div>
+<div class="project-card">
+Interests: Travelling, Photography, Cricket
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="card">
 <h2>Contact</h2>
 
-<p><strong>Email:</strong> niravshahcolab@gmail.com</p>
+<p><strong>Email:</strong> <a href="mailto:niravshahcolab@gmail.com">niravshahcolab@gmail.com</a></p>
 
-<!-- FULL HERO LINKS REPEATED HERE -->
 <div class="social-links">
 <a href="mailto:niravshahcolab@gmail.com">Email</a>
 <a href="https://github.com/niravshah241">GitHub</a>
@@ -25,3 +387,25 @@
 </form>
 
 </section>
+
+</main>
+
+<script>
+const sections = document.querySelectorAll("section");
+const links = document.querySelectorAll(".nav-links a");
+
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            links.forEach(l=>l.classList.remove("active"));
+            const a = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+            if(a) a.classList.add("active");
+        }
+    });
+},{rootMargin:"-40% 0px -55% 0px"});
+
+sections.forEach(s=>s.id && observer.observe(s));
+</script>
+
+</body>
+</html>
